@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095A190F1FF4FCA200AAA0D1 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A190E1FF4FCA200AAA0D1 /* PreferenceViewController.swift */; };
+		095A19131FF4FD1800AAA0D1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095A19111FF4FD1700AAA0D1 /* RxCocoa.framework */; };
+		095A19141FF4FD1800AAA0D1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095A19121FF4FD1800AAA0D1 /* RxSwift.framework */; };
+		095A19171FF51B6000AAA0D1 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095A19161FF51B5F00AAA0D1 /* Preference.swift */; };
 		09D735871FEFF1C500166623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D735861FEFF1C500166623 /* AppDelegate.swift */; };
-		09D735891FEFF1C500166623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D735881FEFF1C500166623 /* ViewController.swift */; };
+		09D735891FEFF1C500166623 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D735881FEFF1C500166623 /* EditorViewController.swift */; };
 		09D7358B1FEFF1C500166623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D7358A1FEFF1C500166623 /* Assets.xcassets */; };
 		09D7358E1FEFF1C500166623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D7358C1FEFF1C500166623 /* Main.storyboard */; };
 		09D7359A1FEFF1C500166623 /* VEditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D735991FEFF1C500166623 /* VEditTests.swift */; };
 		09D735A51FEFF1C500166623 /* VEditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D735A41FEFF1C500166623 /* VEditUITests.swift */; };
+		09D735B31FF4E63C00166623 /* Preference.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D735B21FF4E63C00166623 /* Preference.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095A190E1FF4FCA200AAA0D1 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		095A19111FF4FD1700AAA0D1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		095A19121FF4FD1800AAA0D1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		095A19161FF51B5F00AAA0D1 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		09D735831FEFF1C500166623 /* VEdit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VEdit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D735861FEFF1C500166623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09D735881FEFF1C500166623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09D735881FEFF1C500166623 /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
 		09D7358A1FEFF1C500166623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D7358D1FEFF1C500166623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09D7358F1FEFF1C500166623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +55,7 @@
 		09D735A01FEFF1C500166623 /* VEditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VEditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D735A41FEFF1C500166623 /* VEditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEditUITests.swift; sourceTree = "<group>"; };
 		09D735A61FEFF1C500166623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D735B21FF4E63C00166623 /* Preference.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preference.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095A19131FF4FD1800AAA0D1 /* RxCocoa.framework in Frameworks */,
+				095A19141FF4FD1800AAA0D1 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095A19101FF4FD1700AAA0D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				095A19111FF4FD1700AAA0D1 /* RxCocoa.framework */,
+				095A19121FF4FD1800AAA0D1 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		09D7357A1FEFF1C500166623 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +101,7 @@
 				09D735981FEFF1C500166623 /* VEditTests */,
 				09D735A31FEFF1C500166623 /* VEditUITests */,
 				09D735841FEFF1C500166623 /* Products */,
+				095A19101FF4FD1700AAA0D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				09D735861FEFF1C500166623 /* AppDelegate.swift */,
-				09D735881FEFF1C500166623 /* ViewController.swift */,
+				09D735881FEFF1C500166623 /* EditorViewController.swift */,
 				09D7358A1FEFF1C500166623 /* Assets.xcassets */,
 				09D7358C1FEFF1C500166623 /* Main.storyboard */,
+				09D735B21FF4E63C00166623 /* Preference.storyboard */,
 				09D7358F1FEFF1C500166623 /* Info.plist */,
 				09D735901FEFF1C500166623 /* VEdit.entitlements */,
+				095A190E1FF4FCA200AAA0D1 /* PreferenceViewController.swift */,
+				095A19161FF51B5F00AAA0D1 /* Preference.swift */,
 			);
 			path = VEdit;
 			sourceTree = "<group>";
@@ -134,6 +159,7 @@
 				09D7357F1FEFF1C500166623 /* Sources */,
 				09D735801FEFF1C500166623 /* Frameworks */,
 				09D735811FEFF1C500166623 /* Resources */,
+				095A19151FF4FDAE00AAA0D1 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -233,6 +259,7 @@
 			files = (
 				09D7358B1FEFF1C500166623 /* Assets.xcassets in Resources */,
 				09D7358E1FEFF1C500166623 /* Main.storyboard in Resources */,
+				09D735B31FF4E63C00166623 /* Preference.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +279,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		095A19151FF4FDAE00AAA0D1 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/RxCocoa.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09D7357F1FEFF1C500166623 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D735891FEFF1C500166623 /* ViewController.swift in Sources */,
+				095A190F1FF4FCA200AAA0D1 /* PreferenceViewController.swift in Sources */,
+				09D735891FEFF1C500166623 /* EditorViewController.swift in Sources */,
+				095A19171FF51B6000AAA0D1 /* Preference.swift in Sources */,
 				09D735871FEFF1C500166623 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +466,10 @@
 				CODE_SIGN_ENTITLEMENTS = VEdit/VEdit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = VEdit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.my.excellent.app.VEdit;
@@ -433,6 +485,10 @@
 				CODE_SIGN_ENTITLEMENTS = VEdit/VEdit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = VEdit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.my.excellent.app.VEdit;
