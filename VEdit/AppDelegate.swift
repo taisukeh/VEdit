@@ -39,6 +39,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
   // MARK: - Menu
 
+  @IBAction func newSelected(_ sender: Any) {
+    guard let w = mainStoryboard.instantiateInitialController() as? NSWindowController else { return }
+    guard let vc = w.contentViewController as? EditorViewController else { return }
+    
+    w.window?.makeKeyAndOrderFront(nil)
+  }
+
   @IBAction func preferenceSelected(_ sender: NSMenuItem) {
     
     if let w = preferenceWinController {
@@ -53,7 +60,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       preferenceWinController = c
     }
   }
-  
+
   @IBAction func openSelected(_ sender: Any) {
     guard let w = mainStoryboard.instantiateInitialController() as? NSWindowController else { return }
     guard let vc = w.contentViewController as? EditorViewController else { return }

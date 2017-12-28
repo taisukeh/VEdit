@@ -178,7 +178,7 @@ class EditorViewController: NSViewController, NSWindowDelegate {
       case .alertFirstButtonReturn:
         save()
       case .alertSecondButtonReturn:
-        break
+        return false
       case .alertThirdButtonReturn:
         return true
       default:
@@ -186,7 +186,7 @@ class EditorViewController: NSViewController, NSWindowDelegate {
       }
     }
 
-    return false
+    return true
   }
 }
 
