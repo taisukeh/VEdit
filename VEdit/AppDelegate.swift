@@ -13,8 +13,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   var preferenceWinController: NSWindowController?
   
   let preference = Preference.load()
-  lazy var mainStoryboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
+  let keymap = KeyMap()
 
+  lazy var mainStoryboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil)
   
   class var instance: AppDelegate {
     return NSApplication.shared.delegate as! AppDelegate
@@ -24,6 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     return instance.preference
   }
 
+  class var keymap: KeyMap { return instance.keymap }
+  
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
   }
@@ -46,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Preference"), bundle: nil)
 
     if let c = storyboard.instantiateInitialController() as? NSWindowController {
-      c.showWindow(nil)
+      NSApplication.shared.runModal(for: c.window!)
       preferenceWinController = c
     }
   }
