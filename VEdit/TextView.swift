@@ -23,6 +23,11 @@ class TextView: NSTextView, NSTextViewDelegate {
   }
   
   override func keyDown(with event: NSEvent) {
+    if self.hasMarkedText() {
+      super.keyDown(with: event)
+      return
+    }
+    
     var key = Key()
     
     key.ctrl = event.modifierFlags.contains(NSEvent.ModifierFlags.control)

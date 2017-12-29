@@ -25,6 +25,10 @@ class EditorViewController: NSViewController, NSWindowDelegate {
     textView.setLayoutOrientation(NSLayoutManager.TextLayoutOrientation.vertical)
     textView.font = NSFont(name: "Hiragino Mincho ProN", size: 15.0)
 
+    let p = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
+    p.lineSpacing = 10.0;
+    textView.typingAttributes[.paragraphStyle] = p
+
     self.view.wantsLayer = true
     self.view.layer?.backgroundColor = NSColor.gray.cgColor
 
