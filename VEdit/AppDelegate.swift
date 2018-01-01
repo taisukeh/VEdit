@@ -41,7 +41,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @IBAction func newSelected(_ sender: Any) {
     guard let w = mainStoryboard.instantiateInitialController() as? NSWindowController else { return }
-    guard let vc = w.contentViewController as? EditorViewController else { return }
     
     w.window?.makeKeyAndOrderFront(nil)
   }
